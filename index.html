@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <title>Advanced CSS</title>
+    <link rel="stylesheet" href=style.css>
+  </head>
+  <body>
+    <header>
+      <!--<nav>
+        <div class="flex"></div>
+      </nav>-->
+      <nav class="nav">
+<a class="brand">FireTracker</a>
+<div class="links">
+<a href="index.html">Home</a>
+<a href="download.html">Downloads</a>
+<a href="contact.html">Contact</a>
+<a href="https://github.com/OpenMPT/openmpt">Source</a>
+<button id="themeToggle" type="button" class="button">
+Theme
+</button>
+<script>
+const root = document.documentElement;
+const btn = document.getElementById("themeToggle");
+btn.addEventListener("click", () => {
+const isDark = root.getAttribute("data-theme") === "dark";
+root.setAttribute("data-theme", isDark ? "light" : "dark");
+});
+</script>
+<script>
+const root = document.documentElement;
+const btn = document.querySelector("#themeToggle");
+const savedTheme = localStorage.getItem("theme");
+const theme = savedTheme || "light";
+root.setAttribute("data-theme", theme);
+btn.addEventListener("click", () => {
+const current = root.getAttribute("data-theme") || "light";
+const next = current === "dark" ? "light" : "dark";
+root.setAttribute("data-theme", next);
+localStorage.setItem("theme", next);
+});
+</script>
+</div>
+</nav>
+    </header>
+    <main>
+      <section>
+      <div id="hero"> 
+        <div class="herotext"><h1>Welcome to FireTracker.</h1></div>
+        <img id="heroimage" src="content/Screenshot_20260311_220502.jpg" alt="A screenshot of the music program  FastTracker II, playing the song Aquaphobia by Purple Motion">
+      <div id="blurb"><p>A versitile, cross-platform, open-source music tracker.</p></div>
+      </div>
+      </section>
+      <section>
+        <h2>Features</h2>
+        <div class="grid"><div class="animated"><h3>Modular Interface</h3>
+          <p>Adjust and move around every element as you see fit, and easily remove anything you don't use.</p></div>
+        <div class="animated"><h3>VST Support</h3>
+          <p>Use any and all VST effects and instruments with ease, plus several built-in plugins.</p></div>
+        <div class="animated"><h3>Vast and vibrant community</h3><p>FireTracker is a community-driven project, supported by many volunteers around the world.</p></div>
+        <div class="animated"><h3>Custom Plugins</h3><p>Anyone can create their own plugins to suit their needs and expand functionality.</p></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footerflex"><div>&copy;2026 FireTracker Community</div><div>This project is a community effort.</div><div>Thank you for your support.</div></footer>
+  </body>
+</html>
