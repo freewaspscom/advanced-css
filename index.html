@@ -7,9 +7,6 @@
   </head>
   <body>
     <header>
-      <!--<nav>
-        <div class="flex"></div>
-      </nav>-->
       <nav class="nav">
 <a class="brand">FireTracker</a>
 <div class="links">
@@ -20,13 +17,6 @@
 <button id="themeToggle" type="button" class="button">
 Theme
 </button>
-<script>
-const root = document.documentElement;
-const btn = document.getElementById("themeToggle");
-btn.addEventListener("click", () => {
-const isDark = root.getAttribute("data-theme") === "dark";
-root.setAttribute("data-theme", isDark ? "light" : "dark");
-});
 </script>
 <script>
 const root = document.documentElement;
