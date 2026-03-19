@@ -2,14 +2,6 @@
     font-family: nature;
     src: url(content/ZTNature-Medium.ttf);
 }
-
-/*:root {
-    color-scheme: light dark;
-    --background: light-dark(ghostwhite, darkslategray);
-    --font: light-dark(black, white);
-    --grid-boxes: light-dark(lightgrey, slategrey);
-
-}*/
 #hero img {
     width: 98%;
     height:fit-content;
@@ -75,7 +67,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1450px) {
 .nav {
     flex-direction: row;
     align-items: center;
